@@ -43,4 +43,4 @@ public:
 		return Weight;
 	}
 
-}
+};

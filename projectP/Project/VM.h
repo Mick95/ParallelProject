@@ -1,7 +1,6 @@
 #include <iostream>
-#include<math.h>
-;
-class VM{
+
+ class VM {
 	
 	private:
 		float vm;

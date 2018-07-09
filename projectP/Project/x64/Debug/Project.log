@@ -1,5 +1,4 @@
 ﻿  Project.cpp
 c1xx : warning C4199: la ricerca del nome in due fasi non è supportata per C++/CLI, C++/CX o OpenMP. Usare /Zc:twoPhase-
 c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(86): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(178): error C2065: 'a': identificatore non dichiarato
 c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(180): error C2065: 'a': identificatore non dichiarato

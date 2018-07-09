@@ -36,6 +36,9 @@
     <ClInclude Include="VM.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="DeltaVM.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

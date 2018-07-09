@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="ComputeProduct.h" />
+    <ClInclude Include="DeltaVM.h" />
     <ClInclude Include="Intestazione.h" />
     <ClInclude Include="Simulator.h" />
     <ClInclude Include="stdafx.h" />
