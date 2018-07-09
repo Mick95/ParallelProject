@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  Project.cpp
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(92): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(137): error C2065: 'a': identificatore non dichiarato
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(139): error C2065: 'a': identificatore non dichiarato
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(143): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
