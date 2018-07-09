@@ -27,7 +27,10 @@
     <ClInclude Include="Simulator.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="CCompute.h">
+    <ClInclude Include="Intestazione.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeProduct.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="VM.h">

@@ -1,22 +1,22 @@
 #include <iostream>
-#include <math.h>
-
-using namespace std;
+#include<math.h>
 
 class VM{
 	
 	private:
-		float vmNew;
+		float vm;
 		float core_i;
-		float vmOld;
-		float core_i0;
 		float gamma_i;
+		float a;
+		float b;
 		int i;
 
 	public:
-		VM(int id , float gamma){
+		VM(int id , float gamma, float chi_i, float chi_0){
 			i = id;
 			gamma_i = gamma;
+			a = chi_i;
+			b = chi_0;
 		}
 
 		int getID() {
@@ -27,41 +27,40 @@ class VM{
 			return gamma_i;
 		}
 	
-		float getVMNew(){
-			return vmNew;
-		}
-	
-		float getVMOld(){
-			return vmOld;
+		float getVM(){
+			return vm;
 		}
 
 		float getCore() {
 			return core_i;
 		}
 
-		float getCore_0() {
-			return core_i0;
-		}
-	
-		void setVMNew(float vm){
-			vmNew=vm;
+		float getA() {
+			return a;
 		}
 
-		void setVMNewUsingCore() {
-			vmNew = core_i/gamma_i;
-			vmNew = ceil(vmNew);
+		float getB() {
+			return b;
 		}
 	
-		void setVMOld(float vm){
-			vmOld=vm;
+		void setVM(float vm){
+			vm=vm;
+		}
+
+		void setVM_UsingCore() {
+			vm = core_i/gamma_i;
+			vm = ceil(vm);
 		}
 
 		void setCore(float core) {
 			 core_i=core;
 		}
 
-		void setCore_0(float core) {
-			core_i0=core;
+		void setA(float t1) {
+			a = t1;
 		}
-	
+
+		void setB(float t2) {
+			b = t2;
+		}
 };

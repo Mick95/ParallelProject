@@ -1,0 +1,67 @@
+﻿  Project.cpp
+c1xx : warning C4199: la ricerca del nome in due fasi non è supportata per C++/CLI, C++/CX o OpenMP. Usare /Zc:twoPhase-
+c:\users\windows\desktop\github\parallelproject\projectp\project\vm.h(4): error C2236: token imprevisto 'class'. È stato probabilmente omesso un ';'.
+c:\users\windows\desktop\github\parallelproject\projectp\project\vm.h(4): error C2059: errore di sintassi: '{'
+c:\users\windows\desktop\github\parallelproject\projectp\project\vm.h(4): error C2143: errore di sintassi: ';' mancante prima di '{'
+c:\users\windows\desktop\github\parallelproject\projectp\project\vm.h(4): error C2447: '{': intestazione di funzione mancante. Elenco formale di tipo obsoleto?
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(25): error C2065: 'VM': identificatore non dichiarato
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(25): error C2923: 'std::vector': 'VM' non è un argomento di tipo modello valido per il parametro '_Ty'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(25): error C2903: 'allocator': il simbolo non è un modello di classe né un modello di funzione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(25): error C3203: 'allocator': impossibile utilizzare classe modello non specializzato come argomento di modello per il parametro di modello '_Alloc'. Previsto un tipo reale
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(25): error C2133: 'vectorVm': dimensione sconosciuta
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(25): error C2512: 'std::vector': non è disponibile alcun costruttore predefinito appropriato
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(674): note: vedere la dichiarazione di 'std::vector'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(56): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(56): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'calculateVM'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(56): error C2143: errore di sintassi: ';' mancante prima di '{'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(56): error C2447: '{': intestazione di funzione mancante. Elenco formale di tipo obsoleto?
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(78): error C3861: 'calculateVM': identificatore non trovato
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(86): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(91): error C2662: '_Vector_alloc<_Alloc_types>::_Val_types::size_type std::vector<_Ty,_Alloc>::size(void) noexcept const': impossibile convertire il puntatore 'this' da 'std::vector' a 'const std::vector<_Ty,_Alloc> &'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(91): note: Motivo: impossibile convertire da 'std::vector' a 'const std::vector<_Ty,_Alloc>'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(91): note: La conversione richiede un secondo operatore di conversione definito dall'utente o un costruttore
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(93): error C2678: '[' binario: non è stato trovato alcun operatore che accetti un operando sinistro di tipo 'std::vector'. È anche possibile che non vi siano conversioni accettabili.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1813): note: potrebbe essere 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type) const'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1799): note: o '_Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type)'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(93): note: durante la ricerca di corrispondenza con l'elenco di argomenti '(std::vector, int)'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(93): error C2228: l'elemento a sinistra di '.getCore' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(100): error C2662: '_Vector_alloc<_Alloc_types>::_Val_types::size_type std::vector<_Ty,_Alloc>::size(void) noexcept const': impossibile convertire il puntatore 'this' da 'std::vector' a 'const std::vector<_Ty,_Alloc> &'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(100): note: Motivo: impossibile convertire da 'std::vector' a 'const std::vector<_Ty,_Alloc>'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(100): note: La conversione richiede un secondo operatore di conversione definito dall'utente o un costruttore
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(103): error C2678: '[' binario: non è stato trovato alcun operatore che accetti un operando sinistro di tipo 'std::vector'. È anche possibile che non vi siano conversioni accettabili.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1813): note: potrebbe essere 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type) const'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1799): note: o '_Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type)'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(103): note: durante la ricerca di corrispondenza con l'elenco di argomenti '(std::vector, int)'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(103): error C2228: l'elemento a sinistra di '.getGamma' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(103): error C2088: '[': non valido per class
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(103): error C2228: l'elemento a sinistra di '.getCore' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(112): error C2678: '[' binario: non è stato trovato alcun operatore che accetti un operando sinistro di tipo 'std::vector'. È anche possibile che non vi siano conversioni accettabili.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1813): note: potrebbe essere 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type) const'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1799): note: o '_Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type)'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(112): note: durante la ricerca di corrispondenza con l'elenco di argomenti '(std::vector, int)'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(112): error C2228: l'elemento a sinistra di '.getCore' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(113): error C2678: '[' binario: non è stato trovato alcun operatore che accetti un operando sinistro di tipo 'std::vector'. È anche possibile che non vi siano conversioni accettabili.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1813): note: potrebbe essere 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type) const'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1799): note: o '_Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type)'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(113): note: durante la ricerca di corrispondenza con l'elenco di argomenti '(std::vector, int)'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(113): error C2228: l'elemento a sinistra di '.getCore' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(114): error C2678: '[' binario: non è stato trovato alcun operatore che accetti un operando sinistro di tipo 'std::vector'. È anche possibile che non vi siano conversioni accettabili.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1813): note: potrebbe essere 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type) const'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1799): note: o '_Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type)'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(114): note: durante la ricerca di corrispondenza con l'elenco di argomenti '(std::vector, int)'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(114): error C2228: l'elemento a sinistra di '.setCore' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(118): error C2678: '[' binario: non è stato trovato alcun operatore che accetti un operando sinistro di tipo 'std::vector'. È anche possibile che non vi siano conversioni accettabili.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1813): note: potrebbe essere 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type) const'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1799): note: o '_Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type)'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(118): note: durante la ricerca di corrispondenza con l'elenco di argomenti '(std::vector, int)'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(118): error C2228: l'elemento a sinistra di '.setCore' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(118): error C2088: '[': non valido per class
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(118): error C2228: l'elemento a sinistra di '.getCore' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(122): error C2678: '[' binario: non è stato trovato alcun operatore che accetti un operando sinistro di tipo 'std::vector'. È anche possibile che non vi siano conversioni accettabili.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1813): note: potrebbe essere 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type) const'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(1799): note: o '_Ty &std::vector<_Ty,_Alloc>::operator [](const _Vector_alloc<_Alloc_types>::_Val_types::size_type)'
+  c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(122): note: durante la ricerca di corrispondenza con l'elenco di argomenti '(std::vector, int)'
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(122): error C2228: l'elemento a sinistra di '.setVM_UsingCore' deve avere una classe, struttura o unione
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(90): error C3017: il formato del test di terminazione nell'istruzione 'for' OpenMP non è valido
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(99): error C3017: il formato del test di terminazione nell'istruzione 'for' OpenMP non è valido
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(102): fatal error C1903: impossibile recuperare l'errore o gli errori precedenti. Interruzione della compilazione
