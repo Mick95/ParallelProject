@@ -4,6 +4,7 @@
 	
 	private:
 		float vm;
+		float vmOld;
 		float core_i;
 		float gamma_i;
 		float deadLine_i;
@@ -13,6 +14,7 @@
 		float t2;
 		float chi_i;
 		float chi_0;
+		bool optimizationDone=false;
 		int i;
 
 	public:
@@ -22,8 +24,8 @@
 			deadLine_i = d_i;
 			this->chi_i = chi_i;
 			this->chi_0 = chi_0;
-			t1 = chi_i;
-			t2 = chi_0;
+			t1 = 0;
+			t2 = 0;
 		}
 
 		int getID() {
@@ -40,6 +42,10 @@
 
 		float getVM(){
 			return vm;
+		}
+
+		float getVMLastIteration() {
+			return vmOld;
 		}
 
 		float getCore() {
@@ -70,6 +76,10 @@
 			return chi_0;
 		}
 
+		bool getCondition() {
+			return optimizationDone;
+		}
+
 		void setVM(float vm){
 			vm=vm;
 		}
@@ -77,6 +87,10 @@
 		void setVM_UsingCore() {
 			vm = core_i/gamma_i;
 			vm = ceil(vm);
+		}
+
+		void setVMLastIteration(float num) {
+			vmOld = num;
 		}
 
 		void setCore(float core) {
@@ -97,5 +111,9 @@
 
 		void setT2(float t2) {
 			this->t2 = t2;
+		}
+
+		void setCondition(bool cond) {
+			optimizationDone = cond;
 		}
 };

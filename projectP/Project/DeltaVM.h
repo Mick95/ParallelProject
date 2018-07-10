@@ -1,6 +1,7 @@
 
 #include <iostream>
 
+
 class DeltaVM {
 
 private:
@@ -14,7 +15,7 @@ private:
 
 public:
 	DeltaVM(){}
-
+	
 	DeltaVM(int deltaVM_1, int deltaVM_2, int i, int j, float weight) {
 		deltaVM_i = deltaVM_1;
 		deltaVM_j = deltaVM_2;
