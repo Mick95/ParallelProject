@@ -1,119 +1,82 @@
-#include <iostream>
+#pragma once
+class VM
+{
 
- class VM {
+private:
+	float vm;
+	float vmOld;
+	float core_i;
+	float gamma_i;
+	float deadLine_i;
+	float a = 0;
+	float b = 0;
+	float t1;
+	float t2;
+	float chi_i;
+	float chi_0;
+	bool optimizationDone = false;
+	int i;
+
+public:
+	VM();
+	VM(int id, float gamma, float d_i, float chi_i, float chi_0);
+
+	int getID();
+
+	float getGamma();
+
+	float getDeadLine();
+
+	float getVM();
+
+	float getVMLastIteration();
+
+	float getTemporaryCore(float deltaVM);
+
+	float getCore();
+
+	float getA();
+
+	float getB();
+
+	float getT1();
+
+	float getT2();
+
+	float getChi_i();
+
+	float getChi_0();
+
+	bool getCondition();
 	
-	private:
-		float vm;
-		float vmOld;
-		float core_i;
-		float gamma_i;
-		float deadLine_i;
-		float a=0;
-		float b=0;
-		float t1;
-		float t2;
-		float chi_i;
-		float chi_0;
-		bool optimizationDone=false;
-		int i;
+	void setID(int id);
 
-	public:
-		VM(int id , float gamma, float d_i, float chi_i, float chi_0){
-			i = id;
-			gamma_i = gamma;
-			deadLine_i = d_i;
-			this->chi_i = chi_i;
-			this->chi_0 = chi_0;
-			t1 = 0;
-			t2 = 0;
-		}
+	void setGamma(float gamma);
 
-		int getID() {
-			return i;
-		}
+	void setDeadLine(float deadLine);
 
-		float getGamma() {
-			return gamma_i;
-		}
-	
-		float getDeadLine() {
-			return deadLine_i;
-		}
+	void setVM(float vm);
 
-		float getVM(){
-			return vm;
-		}
+	void setVM_UsingCore();
 
-		float getVMLastIteration() {
-			return vmOld;
-		}
+	void setVMLastIteration(float num);
 
-		float getCore() {
-			return core_i;
-		}
+	void setCoreAfterSimulator(float core);
 
-		float getA() {
-			return a;
-		}
+	void setCore(float core);
 
-		float getB() {
-			return b;
-		}
-	
-		float getT1() {
-			return t1;
-		}
+	void setA(float t1);
 
-		float getT2() {
-			return t2;
-		}
+	void setB(float t2);
 
-		float getChi_i() {
-			return chi_i;
-		}
+	void setT1(float t1);
 
-		float getChi_0() {
-			return chi_0;
-		}
+	void setT2(float t2);
 
-		bool getCondition() {
-			return optimizationDone;
-		}
+	void setChi_0(float chi_0);
 
-		void setVM(float vm){
-			vm=vm;
-		}
+	void setChi_i(float chi_i);
 
-		void setVM_UsingCore() {
-			vm = core_i/gamma_i;
-			vm = ceil(vm);
-		}
-
-		void setVMLastIteration(float num) {
-			vmOld = num;
-		}
-
-		void setCore(float core) {
-			 core_i=core;
-		}
-
-		void setA(float t1) {
-			a = t1;
-		}
-
-		void setB(float t2) {
-			b = t2;
-		}
-
-		void setT1(float t1) {
-		this->t1 = t1;
-		}
-
-		void setT2(float t2) {
-			this->t2 = t2;
-		}
-
-		void setCondition(bool cond) {
-			optimizationDone = cond;
-		}
+	void setCondition(bool cond);
 };
+

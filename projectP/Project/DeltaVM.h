@@ -1,47 +1,39 @@
+#pragma once
+#include "VM.h"
 
-#include <iostream>
-
-
-class DeltaVM {
-
+class DeltaVM
+{
 private:
-
 	int deltaVM_i;
-	int VM_i;
+	VM VM_i;
 	int deltaVM_j;
-	int VM_j;
+	VM VM_j;
 	float Weight;
 
-
 public:
-	DeltaVM(){}
-	
-	DeltaVM(int deltaVM_1, int deltaVM_2, int i, int j, float weight) {
-		deltaVM_i = deltaVM_1;
-		deltaVM_j = deltaVM_2;
-		VM_i = i;
-		VM_j = j;
-		Weight = weight;
-	}
+	DeltaVM();
+	DeltaVM(int deltaVM_1, int deltaVM_2, VM i, VM j, float weight);
 
-	int getdeltaVM_iToADD(){
-		return deltaVM_i;
-	}
+	int getdeltaVM_iToADD();
 
-	int getVM_i() {
-		return VM_i;
-	}
+	VM getVM_i();
 
-	int getdeltaVM_jToREMOVE() {
-		return deltaVM_j;
-	}
+	int getdeltaVM_jToREMOVE();
 
-	int getVM_j() {
-		return VM_j;
-	}
+	VM getVM_j();
 
-	float getWeight(){
-		return Weight;
-	}
+	float getWeight();
+
+	void setdeltaVM_iToADD(int elem);
+
+	void setVM_i(VM vm);
+
+	void setdeltaVM_jToREMOVE(int elem);
+
+	void setVM_j(VM vm);
+
+	void setWeight(float weight);
 
 };
+
+

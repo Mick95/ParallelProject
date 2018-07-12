@@ -1,48 +1,29 @@
-#include <iostream>
+#pragma once
+class ComputeProduct
+{
+private:
+	int i;
+	float wx_i;
+	float chi_i;
+	float chi_0;
+	float gamma_i;
+	float D_i;
 
-class ComputeProduct{
-	
-	private:
-		int i;
-		float wx_i;
-		float chi_i;
-		float chi_0;
-		float gamma_i;
-		float D_i;
-	public:
-		ComputeProduct(){}
+public:
+	ComputeProduct();
+	ComputeProduct(int id, float gamma, float chi_i, float chi_0, float w_i, float d_i);
 
-		ComputeProduct(int id, float gamma, float chi_i, float chi_0, float w_i, float d_i){
-			i=id;
-			wx_i=chi_i*w_i;
-			gamma_i=gamma;
-			D_i = d_i;
-			this->chi_i = chi_i;
-			this->chi_0 = chi_0;
-		}
-	
-		float getWX(){
-			return wx_i;
-		}
+	float getWX();
 
-		float getGamma(){
-			return gamma_i;
-		}
+	float getGamma();
 
-		float getDeadLine() {
-			return D_i;
-		}
+	float getDeadLine();
 
-		float getChi_c() {
-			return chi_i;
-		}
+	float getChi_c();
 
-		float getChi_0() {
-			return chi_0;
-		}
+	float getChi_0();
 
-		int getI(){
-			return i;
-		}
-		
+	int getI();
+
 };
+

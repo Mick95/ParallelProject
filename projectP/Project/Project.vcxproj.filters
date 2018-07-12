@@ -24,19 +24,16 @@
     <ClInclude Include="Application.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="Simulator.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
     <ClInclude Include="Intestazione.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="ComputeProduct.h">
+    <ClInclude Include="DeltaVM.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="VM.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="DeltaVM.h">
+    <ClInclude Include="ComputeProduct.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
@@ -45,6 +42,15 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="Project.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="DeltaVM.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="VM.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeProduct.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
