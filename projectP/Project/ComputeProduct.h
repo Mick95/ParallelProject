@@ -8,6 +8,7 @@ private:
 	float chi_0;
 	float gamma_i;
 	float D_i;
+	float w_i;
 
 public:
 	ComputeProduct();
@@ -18,6 +19,8 @@ public:
 	float getGamma();
 
 	float getDeadLine();
+
+	float getWeight();
 
 	float getChi_c();
 

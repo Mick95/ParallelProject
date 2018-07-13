@@ -12,6 +12,7 @@ ComputeProduct::ComputeProduct(int id, float gamma, float chi_i, float chi_0, fl
 	wx_i = chi_i * w_i;
 	gamma_i = gamma;
 	D_i = d_i;
+	this->w_i = w_i;
 	this->chi_i = chi_i;
 	this->chi_0 = chi_0;
 }
@@ -26,6 +27,10 @@ float ComputeProduct::getGamma() {
 
 float ComputeProduct::getDeadLine() {
 	return D_i;
+}
+
+float ComputeProduct::getWeight() {
+	return w_i;
 }
 
 float ComputeProduct::getChi_c() {

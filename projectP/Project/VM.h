@@ -8,6 +8,7 @@ private:
 	float core_i;
 	float gamma_i;
 	float deadLine_i;
+	float weight_i;
 	float a = 0;
 	float b = 0;
 	float t1;
@@ -19,7 +20,7 @@ private:
 
 public:
 	VM();
-	VM(int id, float gamma, float d_i, float chi_i, float chi_0);
+	VM(int id, float gamma, float d_i, float chi_i, float chi_0, float weight);
 
 	int getID();
 
@@ -31,9 +32,9 @@ public:
 
 	float getVMLastIteration();
 
-	float getTemporaryCore(float deltaVM);
-
 	float getCore();
+
+	float getWeight();
 
 	float getA();
 
@@ -50,10 +51,6 @@ public:
 	bool getCondition();
 	
 	void setID(int id);
-
-	void setGamma(float gamma);
-
-	void setDeadLine(float deadLine);
 
 	void setVM(float vm);
 

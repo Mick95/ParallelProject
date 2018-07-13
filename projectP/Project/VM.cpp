@@ -8,14 +8,16 @@ VM::VM()
 }
 
 
-VM::VM(int id, float gamma, float d_i, float chi_i, float chi_0) {
+VM::VM(int id, float gamma, float d_i, float chi_i, float chi_0, float weight) {
 	i = id;
 	gamma_i = gamma;
 	deadLine_i = d_i;
 	this->chi_i = chi_i;
 	this->chi_0 = chi_0;
+	weight_i = weight;
 	t1 = 0;
 	t2 = 0;
+	vmOld = 0;
 }
 
 int VM::getID() {
@@ -38,12 +40,12 @@ float VM::getVMLastIteration() {
 	return vmOld;
 }
 
-float VM::getTemporaryCore(float deltaVM) {
-	return floor((deltaVM + vm)*gamma_i);
-}
-
 float VM::getCore() {
 	return core_i;
+}
+
+float VM::getWeight() {
+	return weight_i;
 }
 
 float VM::getA() {
@@ -78,16 +80,9 @@ void VM::setID(int id) {
 	i = id;
 }
 
-void VM::setGamma(float gamma){
-		gamma_i = gamma;
-	}
-
-void VM::setDeadLine(float deadLine) {
-	this->deadLine_i = deadLine;
-}
 
 void VM::setVM(float vm) {
-	vm = vm;
+	this->vm = vm;
 }
 
 void VM::setVM_UsingCore() {
@@ -103,8 +98,8 @@ void VM::setCore(float core) {
 	core_i = core;
 }
 
-void VM::setCoreAfterSimulator(float core) {
-	core_i = floor((core + vm)*gamma_i);
+void VM::setCoreAfterSimulator(float vm) {
+	core_i = floor((vm)*gamma_i);
 }
 
 void VM::setA(float t1) {
