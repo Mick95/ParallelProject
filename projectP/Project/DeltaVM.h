@@ -9,6 +9,8 @@ private:
 	int deltaVM_j;
 	VM VM_j;
 	float Weight;
+	float t_i;
+	float t_j;
 
 public:
 	DeltaVM();
@@ -24,6 +26,10 @@ public:
 
 	float getWeight();
 
+	float getTi();
+
+	float getTj();
+
 	void setdeltaVM_iToADD(int elem);
 
 	void setVM_i(VM vm);
@@ -33,6 +39,10 @@ public:
 	void setVM_j(VM vm);
 
 	void setWeight(float weight);
+
+	void setTi(float ti);
+
+	void setTj(float tj);
 
 };
 

@@ -35,6 +35,14 @@ float DeltaVM::getWeight() {
 	return Weight;
 }
 
+float DeltaVM::getTi() {
+	return t_i;
+}
+
+float DeltaVM::getTj() {
+	return t_j;
+}
+
 void DeltaVM::setdeltaVM_iToADD(int elem) {
 	deltaVM_i=elem;
 }
@@ -55,5 +63,12 @@ void DeltaVM::setWeight(float weight) {
 	 Weight=weight;
 }
 
+void DeltaVM::setTi(float ti) {
+	t_i = ti;
+}
+
+void DeltaVM::setTj(float tj) {
+	t_j = tj;
+}
 
 

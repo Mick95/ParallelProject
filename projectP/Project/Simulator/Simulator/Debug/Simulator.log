@@ -1,4 +1,2 @@
 ﻿  Simulator.cpp
-c:\users\windows\desktop\github\parallelproject\projectp\project\simulator\simulator\simulator.cpp(47): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
-c:\users\windows\desktop\github\parallelproject\projectp\project\simulator\simulator\simulator.cpp(145): warning C4018: '<': errata corrispondenza tra signed e unsigned
   Simulator.vcxproj -> C:\Users\Windows\Desktop\GitHub\ParallelProject\projectP\Project\Simulator\Debug\Simulator.exe
