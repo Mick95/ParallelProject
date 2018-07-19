@@ -1,13 +1,10 @@
 List of Virtual Machine for each application
 ID: 1
-VM: 1
-Core: 1
-ID: 4
-VM: 2
+VM: 3
+Core: 3
+ID: 3
+VM: 3
 Core: 5
 ID: 2
-VM: 1
-Core: 2
-ID: 3
 VM: 2
 Core: 8

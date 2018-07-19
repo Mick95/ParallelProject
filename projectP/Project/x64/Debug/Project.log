@@ -1,5 +1,5 @@
 ﻿  Project.cpp
 c1xx : warning C4199: la ricerca del nome in due fasi non è supportata per C++/CLI, C++/CX o OpenMP. Usare /Zc:twoPhase-
-c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(138): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
-c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(321): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(134): warning C4244: '=': conversione da 'int' a 'float'. Possibile perdita di dati.
+c:\users\windows\desktop\github\parallelproject\projectp\project\project.cpp(326): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
   Project.vcxproj -> C:\Users\Windows\Desktop\GitHub\ParallelProject\projectP\Project\x64\Debug\Project.exe
